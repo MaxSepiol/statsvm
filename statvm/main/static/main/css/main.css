@@ -1,0 +1,64 @@
+body {
+    background: white;
+    color: #33475b
+}
+
+h3 {
+    font-size:20px;
+    height: 50px;
+    background: #D3D3D3;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 5px solid #808080;
+
+}
+img {
+    width: 80px;
+    float: center;
+}
+body .logo {
+    font-size: 30px;
+    position:relative;
+    top:-20px;
+}
+.menu {
+    text-align: center;
+
+}
+
+.menu-item {
+    color: #FFFFFF;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    position: relative;
+    text-align: center;
+    font-weight:bold;
+    padding: 10px;
+    background: #2F4F4F;
+    left:-20px;
+    border-radius: 10px
+
+
+}
+
+.menu-item:hover {
+    color: #fff;
+    transform: scale(1.05);
+    background: #000;
+}
+
+@media (min-width: 500px) {
+
+    .group {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-item {
+        display: inline-block;
+        padding: 10px 30px;
+    }
+
+
+}

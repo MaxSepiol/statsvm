@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {% endblock  %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+    <meta http-equiv="refresh" content="5">
+        <img src="{%static 'main/img/123.png' %}" alt="Лого">
+        <span class="logo">VM Cloud Stat</span>
+        <h3>Навигация</h3>
+        <ul>
+            <div class="menu">
+                <span class="group">
+                    <a href="{% url 'home' %}" class="menu-item">Главная</a>
+                    <a href="#" class="menu-item">Статистика</a>
+                    <a href="{% url 'about' %}" class="menu-item">О нас</a>
+                </span>
+            </div>
+        </ul>
+
+        <main>
+            {% block content %}
+            {% endblock  %}
+        </main>
+    </meta>
+</body>
+</html>
